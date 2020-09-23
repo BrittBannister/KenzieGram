@@ -1,0 +1,15 @@
+html
+    head
+        title=  title
+        link(rel='stylesheet', href='stylesheet.css')
+    body
+        h1= "Welcome to Kenziegram"
+        form(method='POST' action='/public/upload' enctype='multipart/form-data')
+            fieldset
+                input(type='file' name='myPhoto' id='inputPhoto')
+                input(type='submit')
+
+        each photo in photos
+             img(src=`http://localhost:3000/uploads/${photo}`)
+
+        
