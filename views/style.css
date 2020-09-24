@@ -1,11 +1,31 @@
+body {
+  background-image: linear-gradient(#d19cab, #ee7a83, #86a2fd, #9893ea);
+}
+
 #title {
-  color: blue;
+  color: rgb(50, 130, 180);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form {
+  margin: 0 auto;
+  display: table;
+  height: 50px;
 }
 
 img {
   display: flex;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border: 5px solid #d19cab;
+  background-color: white;
 }
 
-fieldset {
-  width: 350px;
+#inputPhoto {
+  font-weight: bold;
+}
+
+#submit {
+  font-weight: bold;
 }

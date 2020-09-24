@@ -6,13 +6,13 @@ html
     body
         h1#title= "Welcome to Kenziegram"
         form(method='POST' action='/public/upload' enctype='multipart/form-data')
-            fieldset
                 input(type='file' name='myPhoto' id='inputPhoto')
-                input(type='submit')
+                input(type='submit' id = 'submit')
 
         each photo in photos
+            div.images
              img(src=`/uploads/${photo}`
-             height='250px'
-             width='250px')
+             height='350px'
+             width='350px')
 
         
