@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
     }
     console.log(feedArr)
 
-    res.render('index', { title: 'Kenzie Gram', photos: items })
+    res.render('index', { title: 'Kenziegram', photos: items })
   })
 })
 

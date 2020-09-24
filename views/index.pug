@@ -1,15 +1,18 @@
 html
     head
         title=  title
-        link(rel='stylesheet', href='stylesheet.css')
+    style
+        include style.css
     body
-        h1= "Welcome to Kenziegram"
+        h1#title= "Welcome to Kenziegram"
         form(method='POST' action='/public/upload' enctype='multipart/form-data')
             fieldset
                 input(type='file' name='myPhoto' id='inputPhoto')
                 input(type='submit')
 
         each photo in photos
-             img(src=`http://localhost:3000/uploads/${photo}`)
+             img(src=`/uploads/${photo}`
+             height='250px'
+             width='250px')
 
         
